@@ -12,11 +12,6 @@
       "uri": "https://raw.githubusercontent.com/omegaXiv-labs/omegaXiv-run-f1be1c20-5f6f-4b5c-85c2-3440e8b965c9/main/paper/main.pdf"
     },
     {
-      "kind": "paper_thumbnail",
-      "label": "Paper Thumbnail",
-      "uri": "https://raw.githubusercontent.com/omegaXiv-labs/omegaXiv-run-f1be1c20-5f6f-4b5c-85c2-3440e8b965c9/main/paper/thumbnail.png"
-    },
-    {
       "kind": "latex_sources",
       "label": "LaTeX Sources",
       "uri": "https://github.com/omegaXiv-labs/omegaXiv-run-f1be1c20-5f6f-4b5c-85c2-3440e8b965c9/blob/main/paper/main.tex"
@@ -25,6 +20,11 @@
       "kind": "sources",
       "label": "Sources",
       "uri": "https://github.com/omegaXiv-labs/omegaXiv-run-f1be1c20-5f6f-4b5c-85c2-3440e8b965c9/blob/main/sources/sources.json"
+    },
+    {
+      "kind": "video",
+      "label": "Hide and Seek Default Proposed Demo",
+      "uri": "https://raw.githubusercontent.com/omegaXiv-labs/omegaXiv-run-f1be1c20-5f6f-4b5c-85c2-3440e8b965c9/main/experiments/previews/hide_and_seek-default_proposed_demo.mp4"
     }
   ],
   "artifacts_summary": "Exports include a compile-ready LaTeX manuscript (paper/main.tex), generated bibliography (paper/references.bib), equation trace map (paper/EQUATION_USAGE_MAP.md), and compiled PDF (paper/main.pdf). Manuscript references two vector-PDF figures, five table/data artifacts, and seven code artifacts from validation_simulation outputs.",
@@ -136,231 +136,8 @@
     ],
     "target_deadline": "2026-03-08"
   },
-  "package": {
-    "artifacts": [
-      {
-        "kind": "other",
-        "path": "workspace/packages/cl-act/packaging_manifest.json",
-        "sha256": "027c3945277cd052b2b9387855fb54cb9a54eaf38146c0396d6c146cc581cb50",
-        "size_bytes": 1679,
-        "url": null
-      },
-      {
-        "kind": "other",
-        "path": "workspace/packages/cl-act/README.md",
-        "sha256": "1825ffe0d26e6abf5423cdda066b57d2d2efb7263e27efc9bb999131f79837d2",
-        "size_bytes": 2042,
-        "url": null
-      },
-      {
-        "kind": "other",
-        "path": "workspace/packages/cl-act/requirements.txt",
-        "sha256": "5fc248781dca4e4b0252f039aa3a32d7c253f14ffbac06429f5bf5ec0a88fd4b",
-        "size_bytes": 217,
-        "url": null
-      },
-      {
-        "kind": "other",
-        "path": "workspace/packages/cl-act/dependency_graph.json",
-        "sha256": "94869528c295be4e9494419494cf74cf5d7b3d6895ae1b80d5fcff3d7709c0b1",
-        "size_bytes": 2503,
-        "url": null
-      }
-    ],
-    "dependencies": [
-      {
-        "name": "numpy",
-        "required_by": [
-          "activation-cl-validation"
-        ],
-        "source": "runtime",
-        "spec": ">=1.26,<3",
-        "transitive": false
-      },
-      {
-        "name": "pandas",
-        "required_by": [
-          "activation-cl-validation"
-        ],
-        "source": "runtime",
-        "spec": ">=2.2,<3",
-        "transitive": false
-      },
-      {
-        "name": "matplotlib",
-        "required_by": [
-          "activation-cl-validation"
-        ],
-        "source": "runtime",
-        "spec": ">=3.8,<4",
-        "transitive": false
-      },
-      {
-        "name": "seaborn",
-        "required_by": [
-          "activation-cl-validation"
-        ],
-        "source": "runtime",
-        "spec": ">=0.13,<1",
-        "transitive": false
-      },
-      {
-        "name": "sympy",
-        "required_by": [
-          "activation-cl-validation"
-        ],
-        "source": "runtime",
-        "spec": ">=1.12,<2",
-        "transitive": false
-      },
-      {
-        "name": "pypdfium2",
-        "required_by": [
-          "activation-cl-validation"
-        ],
-        "source": "optional",
-        "spec": ">=4.30,<5",
-        "transitive": false
-      },
-      {
-        "name": "pytest",
-        "required_by": [
-          "tests"
-        ],
-        "source": "dev",
-        "spec": ">=8,<9",
-        "transitive": false
-      },
-      {
-        "name": "ruff",
-        "required_by": [
-          "lint"
-        ],
-        "source": "dev",
-        "spec": ">=0.5,<1",
-        "transitive": false
-      },
-      {
-        "name": "mypy",
-        "required_by": [
-          "typecheck"
-        ],
-        "source": "dev",
-        "spec": ">=1.10,<2",
-        "transitive": false
-      },
-      {
-        "name": "python-dateutil",
-        "required_by": [
-          "pandas",
-          "matplotlib"
-        ],
-        "source": "runtime",
-        "spec": ">=2.8.2",
-        "transitive": true
-      },
-      {
-        "name": "pytz",
-        "required_by": [
-          "pandas"
-        ],
-        "source": "runtime",
-        "spec": ">=2020.1",
-        "transitive": true
-      },
-      {
-        "name": "tzdata",
-        "required_by": [
-          "pandas"
-        ],
-        "source": "runtime",
-        "spec": ">=2022.7",
-        "transitive": true
-      },
-      {
-        "name": "contourpy",
-        "required_by": [
-          "matplotlib"
-        ],
-        "source": "runtime",
-        "spec": ">=1.0.1",
-        "transitive": true
-      },
-      {
-        "name": "cycler",
-        "required_by": [
-          "matplotlib"
-        ],
-        "source": "runtime",
-        "spec": ">=0.10",
-        "transitive": true
-      },
-      {
-        "name": "fonttools",
-        "required_by": [
-          "matplotlib"
-        ],
-        "source": "runtime",
-        "spec": ">=4.22.0",
-        "transitive": true
-      },
-      {
-        "name": "kiwisolver",
-        "required_by": [
-          "matplotlib"
-        ],
-        "source": "runtime",
-        "spec": ">=1.3.1",
-        "transitive": true
-      },
-      {
-        "name": "packaging",
-        "required_by": [
-          "matplotlib"
-        ],
-        "source": "runtime",
-        "spec": ">=20.0",
-        "transitive": true
-      },
-      {
-        "name": "pillow",
-        "required_by": [
-          "matplotlib"
-        ],
-        "source": "runtime",
-        "spec": ">=8",
-        "transitive": true
-      },
-      {
-        "name": "pyparsing",
-        "required_by": [
-          "matplotlib"
-        ],
-        "source": "runtime",
-        "spec": ">=3",
-        "transitive": true
-      }
-    ],
-    "dependency_graph_mermaid": "graph TD\n  A[activation-cl-validation] --> B[numpy]\n  A --> C[pandas]\n  A --> D[matplotlib]\n  A --> E[seaborn]\n  A --> F[sympy]\n  A --> G[pypdfium2]\n  C --> H[python-dateutil]\n  C --> I[pytz]\n  C --> J[tzdata]\n  D --> K[contourpy]\n  D --> L[cycler]\n  D --> M[fonttools]\n  D --> N[kiwisolver]\n  D --> O[packaging]\n  D --> P[pillow]\n  D --> Q[pyparsing]",
-    "dependency_graph_path": "workspace/packages/cl-act/dependency_graph.json",
-    "distribution_name": "activation-cl-validation",
-    "handle": "cl-act",
-    "handle_alternatives": [
-      "activation-cl-validation",
-      "continual-activation-cl"
-    ],
-    "import_name": "activation_cl_validation",
-    "install_command": "pip install activation-cl-validation",
-    "install_target": "activation-cl-validation",
-    "manager_install_command": "pip install omegaxiv",
-    "manifest_path": "workspace/packages/cl-act/packaging_manifest.json",
-    "package_type": "library",
-    "readme_path": "workspace/packages/cl-act/README.md",
-    "requirements_path": "workspace/packages/cl-act/requirements.txt",
-    "version": null
-  },
   "paper_pdf_url": "https://raw.githubusercontent.com/omegaXiv-labs/omegaXiv-run-f1be1c20-5f6f-4b5c-85c2-3440e8b965c9/main/paper/main.pdf",
-  "paper_thumbnail_url": "https://raw.githubusercontent.com/omegaXiv-labs/omegaXiv-run-f1be1c20-5f6f-4b5c-85c2-3440e8b965c9/main/paper/thumbnail.png",
+  "paper_thumbnail_url": null,
   "pipeline_id": "bc36d98c-6b8e-435c-8783-221723ad93ff",
   "problem_type": "Open Question",
   "related_links": [
@@ -380,5 +157,37 @@
   ],
   "target_deadline": "2026-03-08",
   "title": "Continual Learning Activation Function",
-  "updated_at": "2026-03-11T09:54:26.950048+00:00"
+  "updated_at": "2026-03-11T10:06:30.141361+00:00",
+  "publication_preview": {
+    "kind": "video",
+    "label": "Hide and Seek Default Proposed Demo",
+    "caption": "Recovered COOM rollout from the trained proposed-activation agent.",
+    "phase": "validation_simulation",
+    "asset": {
+      "path": "experiments/previews/hide_and_seek-default_proposed_demo.mp4",
+      "mimeType": "video/mp4",
+      "url": "https://raw.githubusercontent.com/omegaXiv-labs/omegaXiv-run-f1be1c20-5f6f-4b5c-85c2-3440e8b965c9/main/experiments/previews/hide_and_seek-default_proposed_demo.mp4"
+    },
+    "poster": {
+      "path": "experiments/coom_activation_validation/outputs/plots/mean_success_learning_curves.png",
+      "mimeType": "image/png",
+      "url": "https://raw.githubusercontent.com/omegaXiv-labs/omegaXiv-run-f1be1c20-5f6f-4b5c-85c2-3440e8b965c9/main/experiments/coom_activation_validation/outputs/plots/mean_success_learning_curves.png"
+    }
+  },
+  "publicationPreview": {
+    "kind": "video",
+    "label": "Hide and Seek Default Proposed Demo",
+    "caption": "Recovered COOM rollout from the trained proposed-activation agent.",
+    "phase": "validation_simulation",
+    "asset": {
+      "path": "experiments/previews/hide_and_seek-default_proposed_demo.mp4",
+      "mimeType": "video/mp4",
+      "url": "https://raw.githubusercontent.com/omegaXiv-labs/omegaXiv-run-f1be1c20-5f6f-4b5c-85c2-3440e8b965c9/main/experiments/previews/hide_and_seek-default_proposed_demo.mp4"
+    },
+    "poster": {
+      "path": "experiments/coom_activation_validation/outputs/plots/mean_success_learning_curves.png",
+      "mimeType": "image/png",
+      "url": "https://raw.githubusercontent.com/omegaXiv-labs/omegaXiv-run-f1be1c20-5f6f-4b5c-85c2-3440e8b965c9/main/experiments/coom_activation_validation/outputs/plots/mean_success_learning_curves.png"
+    }
+  }
 }
