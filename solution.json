@@ -25,6 +25,21 @@
       "kind": "video",
       "label": "Hide and Seek Default Proposed Demo",
       "uri": "https://raw.githubusercontent.com/omegaXiv-labs/omegaXiv-run-f1be1c20-5f6f-4b5c-85c2-3440e8b965c9/main/experiments/previews/hide_and_seek-default_proposed_demo.mp4"
+    },
+    {
+      "kind": "package_readme",
+      "label": "Package README",
+      "uri": "https://raw.githubusercontent.com/omegaXiv-labs/omegaXiv-run-f1be1c20-5f6f-4b5c-85c2-3440e8b965c9/main/workspace/packages/cl-act/README.md"
+    },
+    {
+      "kind": "requirements",
+      "label": "Package Requirements",
+      "uri": "https://raw.githubusercontent.com/omegaXiv-labs/omegaXiv-run-f1be1c20-5f6f-4b5c-85c2-3440e8b965c9/main/workspace/packages/cl-act/requirements.txt"
+    },
+    {
+      "kind": "dependency_graph",
+      "label": "Package Dependency Graph",
+      "uri": "https://raw.githubusercontent.com/omegaXiv-labs/omegaXiv-run-f1be1c20-5f6f-4b5c-85c2-3440e8b965c9/main/workspace/packages/cl-act/dependency_graph.json"
     }
   ],
   "artifacts_summary": "Exports include a compile-ready LaTeX manuscript (paper/main.tex), generated bibliography (paper/references.bib), equation trace map (paper/EQUATION_USAGE_MAP.md), and compiled PDF (paper/main.pdf). Manuscript references two vector-PDF figures, five table/data artifacts, and seven code artifacts from validation_simulation outputs.",
@@ -189,5 +204,19 @@
       "mimeType": "image/png",
       "url": "https://raw.githubusercontent.com/omegaXiv-labs/omegaXiv-run-f1be1c20-5f6f-4b5c-85c2-3440e8b965c9/main/experiments/coom_activation_validation/outputs/plots/mean_success_learning_curves.png"
     }
+  },
+  "package": {
+    "handle": "cl-act",
+    "package_type": "library",
+    "distribution_name": "activation-cl-validation",
+    "install_command": "ox install cl-act",
+    "manager_install_command": "pip install omegaxiv",
+    "install_target": "activation-cl-validation",
+    "readme_path": "workspace/packages/cl-act/README.md",
+    "requirements_path": "workspace/packages/cl-act/requirements.txt",
+    "dependency_graph_path": "workspace/packages/cl-act/dependency_graph.json",
+    "readme_url": "https://raw.githubusercontent.com/omegaXiv-labs/omegaXiv-run-f1be1c20-5f6f-4b5c-85c2-3440e8b965c9/main/workspace/packages/cl-act/README.md",
+    "requirements_url": "https://raw.githubusercontent.com/omegaXiv-labs/omegaXiv-run-f1be1c20-5f6f-4b5c-85c2-3440e8b965c9/main/workspace/packages/cl-act/requirements.txt",
+    "dependency_graph_url": "https://raw.githubusercontent.com/omegaXiv-labs/omegaXiv-run-f1be1c20-5f6f-4b5c-85c2-3440e8b965c9/main/workspace/packages/cl-act/dependency_graph.json"
   }
 }
